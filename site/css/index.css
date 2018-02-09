@@ -26,43 +26,42 @@ article {
     grid-column: 3 / 8;
     grid-row: 6 / 8;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
 .username {
-    grid-column: 1 / 6;
+    grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template-columns: inherit;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
-    float: left;
-    justify-content: center;
-    margin-top: 35px;
-    align-items: center;
+    align-items: end;
 }
 
 .username > * {
-    grid-column: 1 / 6;
-    grid-row: 1;
-    height: 
+    grid-column: 2 / 9;
+}
+
+.username > i {
+    grid-column: 1 / 2
 }
 
 .password {
-    grid-column: 1 / 6;
+    grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-columns: inherit;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
-    float: left;
-    justify-content: center;
-    margin-top: 35px;
-    align-items: center;
+    align-items: end;
 }
 
 .password > * {
-    grid-column: 1 / 6;
-    grid-row: 1;
+    grid-column: 2 / 9;
+}
+
+.password > i {
+    grid-column: 1 / 2
 }
 
 input[type=text] {
@@ -73,43 +72,39 @@ input[type=text] {
     border-right: none;
     border-bottom: 1px solid black;
     width: 100%;
-    height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;    
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 input::placeholder {
     font-size: 1.5em;
 }
 
-.container section {
+.Button {
     grid-column: 2 / 9;
     grid-row: 9 / 10;
 }
 
-.container nav {
-    grid-column: 3 / 8;
-    grid-row: 10 / 11;
-}
-
-.container section button {
+.Button button {
     box-sizing:border-box;
     width: 100%;
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
-    background-color: #3A5CC8;
+    background-color: #769DC2;
     border-color: transparent;
 }
 
-.container section button:hover {
-    border: 1px solid #5D26A2;
+.toggled {
+    background-color: #3B57CC;
+    display: block;
 }
 
-.showFirstPageSectionButton {
-    background-color: #372EB1;
+nav {
+    grid-column: 3 / 8;
+    grid-row: 10 / 11;
 }
 
-.container nav button {
+nav button {
     box-sizing:border-box;
     width: 100%;
     height: 100%;
