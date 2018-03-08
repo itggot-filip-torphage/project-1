@@ -132,8 +132,6 @@ nav button {
     font-size: 2em;
 }
 
-
-
 @media (max-width: 1000px) {
     body {
         background-image: url(../img/mobile-background.jpg);
