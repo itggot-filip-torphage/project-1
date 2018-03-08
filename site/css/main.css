@@ -1,0 +1,122 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.container {
+    position: fixed;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+    background-color: aqua;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(75, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+a > i {
+    font-size: 40px;
+}
+
+main > .mediterranean {
+    grid-column: 2 / 76;
+    grid-row: 1 / 11;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.arctic {
+    background-color: lightseagreen;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+}
+
+.pacific {
+    background-color: lightsalmon;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+}
+
+
+.atlantic {
+    background-color: royalblue;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+}
+
+.gulf_coast {
+    background-color: orchid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+}
+
+h3 {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    }
+
+    main {
+        background-color: aqua;
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(75, 1fr);
+    }
+
+    article {
+        grid-column: 1 / 5;
+        grid-row: 3 / 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .arctic {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .pacific {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }    
+    
+    .atlantic {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .gulf_coast {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+}
