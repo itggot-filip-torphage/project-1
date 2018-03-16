@@ -1,0 +1,66 @@
+a > i {
+    font-size: 40px;
+}
+
+h3 {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 72px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.background-image {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.1);
+    background: url(../img/desktop-background.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+}
+
+.username > i {
+    font-size: 24px;
+}
+
+.password > i {
+    font-size: 24px;
+}
+    
+
+@media (min-width: 1000px) {
+    .background-image {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    input[type=text] {
+        border-bottom: 3px solid black;
+        font-size: 2em;
+    }
+
+    .username > i {
+        font-size: 40px;
+    }
+
+    .password > i {
+        font-size: 40px;
+    }
+}
